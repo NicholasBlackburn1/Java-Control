@@ -1,6 +1,7 @@
 plugins {
     id 'groovy'
     id 'java'
+    id 'application'
 }
 
 group 'Bluetoothcontriol'
@@ -10,13 +11,35 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    flatDir {
+        dirs 'lib'
+    }
 }
 
+
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.3.11'
-    compile group: 'net.sf.bluecove', name: 'bluecove', version: '2.1.0'
 
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile group: 'net.sf.bluecove', name: 'bluecove', version: '2.1.0'
 
+    compile fileTree(include: ['*.jar'], dir: 'lib')
+
+
+
+}
+
+
+application {
+    mainClassName = 'com.bluetoothcontrol.main'
+}
+
+
+jar {
+    doFirst {
+        manifest {
+            if (!configurations.compile.isEmpty()) {
+                attributes(
+                        'Class-Path': configurations.compile.collect{it.toURI().toString()}.join(' '),
+                        'Main-Class': 'com.bluetoothcontrol.Main')
+            }
+        }
+    }
 }
