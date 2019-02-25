@@ -1,6 +1,7 @@
 Manifest-Version: 1.0
 Class-Path: file:/home/nicktheacker/Bluetooth%20controol/lib/bluecove-2.
- 1.1.jar file:/home/nicktheacker/Bluetooth%20controol/lib/bluecove-2.1.1
- -sources.jar
+ 1.1.jar file:/home/nicktheacker/Bluetooth%20controol/lib/jexer-0.3.0.ja
+ r file:/home/nicktheacker/Bluetooth%20controol/lib/bluecove-2.1.1-sourc
+ es.jar
 Main-Class: com.bluetoothcontrol.Main
 
