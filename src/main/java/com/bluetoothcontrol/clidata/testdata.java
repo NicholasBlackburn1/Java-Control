@@ -6,7 +6,9 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 import java.util.Random;
 import java.util.concurrent.Callable;
 
-public class testdata implements Callable<Void> {
+public class testdata  {
+    /*
+    public boolean test = false;
     public static final String TOPIC = "tets";
     private final IMqttClient client;
 
@@ -31,7 +33,9 @@ public class testdata implements Callable<Void> {
             Random temp = new Random();
             byte[] payload = String.format("T:%04.2f",temp)
                     .getBytes();
+            test=true;
             return new MqttMessage(payload);
         }
+        */
     }
 

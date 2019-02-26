@@ -11,7 +11,7 @@ import java.util.UUID;
 
 public class publisher {
 
-
+/*
         public static final String BROKER_URL = "tcp://broker.mqttdashboard.com:1883";
         private MqttClient client;
 
@@ -31,4 +31,5 @@ public class publisher {
                 System.exit(1);
             }
         }
+        */
     }
