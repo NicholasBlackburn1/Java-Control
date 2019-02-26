@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.concurrent.Callable;
 
 public class testdata implements Callable<Void> {
-    private static final String TOPIC = "tets";
+    public static final String TOPIC = "tets";
     private final IMqttClient client;
 
     // ... private members omitted
@@ -20,18 +20,18 @@ public class testdata implements Callable<Void> {
             if ( !client.isConnected()) {
                 return null;
             }
-            MqttMessage msg = readEngineTemp();
+            MqttMessage msg = testtemp();
             msg.setQos(0);
             msg.setRetained(true);
             client.publish(TOPIC,msg);
             return null;
         }
 
-        private MqttMessage readEngineTemp() {
+        private MqttMessage testtemp() {
             Random temp = new Random();
             byte[] payload = String.format("T:%04.2f",temp)
                     .getBytes();
             return new MqttMessage(payload);
         }
     }
-}
+
