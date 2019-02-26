@@ -64,7 +64,7 @@ case "`uname`" in
     ;;
 esac
 
-CLASSPATH=$APP_HOME/lib/nicholasblackburn-1.0-SNAPSHOT.jar:$APP_HOME/lib/bluecove-2.1.1.jar:$APP_HOME/lib/jexer-0.3.0.jar:$APP_HOME/lib/bluecove-2.1.1-sources.jar
+CLASSPATH=$APP_HOME/lib/nicholasblackburn-1.0-SNAPSHOT.jar:$APP_HOME/lib/bluecove-2.1.1.jar:$APP_HOME/lib/jexer-0.3.0.jar:$APP_HOME/lib/org.eclipse.paho.client.mqttv3-1.2.1.jar:$APP_HOME/lib/bluecove-2.1.1-sources.jar
 
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then

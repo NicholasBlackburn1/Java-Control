@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\nicholasblackburn-1.0-SNAPSHOT.jar;%APP_HOME%\lib\bluecove-2.1.1.jar;%APP_HOME%\lib\jexer-0.3.0.jar;%APP_HOME%\lib\bluecove-2.1.1-sources.jar
+set CLASSPATH=%APP_HOME%\lib\nicholasblackburn-1.0-SNAPSHOT.jar;%APP_HOME%\lib\bluecove-2.1.1.jar;%APP_HOME%\lib\jexer-0.3.0.jar;%APP_HOME%\lib\org.eclipse.paho.client.mqttv3-1.2.1.jar;%APP_HOME%\lib\bluecove-2.1.1-sources.jar
 
 @rem Execute nicholasblackburn
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %NICHOLASBLACKBURN_OPTS%  -classpath "%CLASSPATH%" com.bluetoothcontrol.main %CMD_LINE_ARGS%
