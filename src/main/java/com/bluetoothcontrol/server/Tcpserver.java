@@ -14,7 +14,8 @@ import java.net.Socket;
         private static Socket socket;
 
         public static void main(String[] args)
-        {
+        { 
+            String test = "test";
             try
             {
 
@@ -32,6 +33,7 @@ import java.net.Socket;
                     BufferedReader br = new BufferedReader(isr);
                     String number = br.readLine();
                     System.out.println("Message received from client is "+number);
+
 
                     //Multiplying the number by 2 and forming the return message
                     String returnMessage;
