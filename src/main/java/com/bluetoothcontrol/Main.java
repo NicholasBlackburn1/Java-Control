@@ -2,26 +2,29 @@ package com.bluetoothcontrol;
 
 import java.awt.Window;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.Timer;
 
 import javax.swing.plaf.TextUI;
 
 import com.bluetoothcontrol.Textui.Textui;
+import com.bluetoothcontrol.clidata.pos;
 import com.bluetoothcontrol.client.Mqttclient;
 import com.bluetoothcontrol.client.Tcpclient;
 import com.bluetoothcontrol.server.BluetoothServer;
 import com.bluetoothcontrol.server.Tcpserver;
 
-public class main {
-    public static void main(String[] args) throws IOException {
-      
-      
-        int menu ;
-        Scanner input = new Scanner(System.in);
-        System.out.println("to run clinet press 1 to run server press 2"+input.nextInt());
+public class Main {
+    public static void main(String[] args){
+
     
-        System.out.print(input);
-       
+    Scanner ss = new Scanner(System.in);
+    System.out.print("Enter the your Name : ");
+    // Below Statement used for getting String including sentence
+    int s = ss.nextInt();
+
+    System.out.println(s);
     }
 }

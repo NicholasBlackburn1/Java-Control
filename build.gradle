@@ -28,7 +28,7 @@ dependencies {
 
 
 application {
-    mainClassName = 'com.bluetoothcontrol.main'
+    mainClassName = 'com.bluetoothcontrol.Main'
 }
 
 

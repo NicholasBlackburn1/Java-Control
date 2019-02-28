@@ -1,7 +1,7 @@
 package com.bluetoothcontrol.Textui;
 
  import com.bluetoothcontrol.Textui.Textui;
- import com.bluetoothcontrol.main;
+ import com.bluetoothcontrol.Main;
  import com.bluetoothcontrol.server.*;
  import jexer.*;
 
