@@ -4,6 +4,7 @@ import java.awt.Window;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.Timer;
 
@@ -17,14 +18,15 @@ import com.bluetoothcontrol.server.BluetoothServer;
 import com.bluetoothcontrol.server.Tcpserver;
 
 public class Main {
-    public static void main(String[] args){
-     @SuppressWarnings("resource")
+    // reads user input to do an action from a number list 
+    public static void main(String[] args) throws NoSuchElementException {
+        Scanner keyboard = new Scanner(System.in);
+        int myint = keyboard.nextInt();
+         System.out.println("enter an integer"); 
+         
+         if(myint == 1){
+             System.out.println("hello");
+         }
 
-    Scanner ss = new Scanner(System.in);
-    System.out.print("Enter the your Name : ");
-    // Below Statement used for getting String including sentence
-    int s = ss.nextInt();
-
-    System.out.println(s);
     }
 }
