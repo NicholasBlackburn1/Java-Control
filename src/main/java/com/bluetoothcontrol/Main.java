@@ -18,8 +18,8 @@ import com.bluetoothcontrol.server.Tcpserver;
 
 public class Main {
     public static void main(String[] args){
+     @SuppressWarnings("resource")
 
-    
     Scanner ss = new Scanner(System.in);
     System.out.print("Enter the your Name : ");
     // Below Statement used for getting String including sentence
