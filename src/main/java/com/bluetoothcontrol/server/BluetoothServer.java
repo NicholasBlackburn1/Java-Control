@@ -1,6 +1,8 @@
 package com.bluetoothcontrol.server;
 
 
+import jexer.event.TKeypressEvent;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,10 +19,11 @@ import javax.microedition.io.StreamConnection;
 import javax.microedition.io.StreamConnectionNotifier;
 
 public class BluetoothServer {
+	/*
 	private static final String RESPONSE = "Greetings from serverland";
 
 	// start server
-	private void startServer() throws IOException {
+	public  static void startServer() throws IOException {
 		// Create a UUID for SPP
 		UUID uuid = new UUID("0000110100001000800000805F9B34FB", false);
 		// Create the servicve url
@@ -60,11 +63,12 @@ public class BluetoothServer {
 		LocalDevice localDevice = LocalDevice.getLocalDevice();
 		System.out.println("Address: " + localDevice.getBluetoothAddress());
 		System.out.println("Name: " + localDevice.getFriendlyName());
-
 		BluetoothServer sampleSPPServer = new BluetoothServer();
 		while (true) {
 			sampleSPPServer.startServer();
 		}
 
 	}
-}
+	*/
+
+	}
