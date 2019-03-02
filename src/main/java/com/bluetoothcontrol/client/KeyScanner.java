@@ -7,24 +7,20 @@ import java.util.Scanner;
 
 public class KeyScanner{
     public static int num2 = 2;
-    public static int num1 = 1;
+    public static int num1 ;
+    public static int num0;
     public static void Keybord() throws IOException{
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter something > ");
+        System.out.print("You entered : ");
+       
+    while (input.hasNext()){
+         num1 =input.nextInt(num1);
+       }
+       
 
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
+        System.out.println(num1);
 
-    System.out.println("tets");
-    //Here you declare your BufferedReader object and instance it.
-    while (true){
-         int menu = br.read();
-         //We read from user's input
-        
-         if (menu == num1){
-            System.out.println("hello");
-        } 
-         if (menu == num2){
-            System.out.println("tets");
-         }
-        }
-        
+
     }
 }

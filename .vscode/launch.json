@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<nicholasblackburn>",
+            "request": "launch",
+            "mainClass": "com.bluetoothcontrol.Main",
+            "projectName": "nicholasblackburn"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Textui<nicholasblackburn>",
+            "request": "launch",
+            "mainClass": "com.bluetoothcontrol.Textui.Textui",
+            "projectName": "nicholasblackburn"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Tcpclient<nicholasblackburn>",
+            "request": "launch",
+            "mainClass": "com.bluetoothcontrol.client.Tcpclient",
+            "projectName": "nicholasblackburn"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Tcpserver<nicholasblackburn>",
+            "request": "launch",
+            "mainClass": "com.bluetoothcontrol.server.Tcpserver",
+            "projectName": "nicholasblackburn"
+        }
+    ]
+}
